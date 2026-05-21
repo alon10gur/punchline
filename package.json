@@ -2,7 +2,7 @@
   "name": "punchline",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd client && npm run build",
+    "build": "npx vite build --config client/vite.config.js",
     "start": "node server/server.js",
     "dev:server": "cd server && node --watch server.js",
     "dev:client": "cd client && npm run dev"
