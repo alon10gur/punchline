@@ -4,11 +4,11 @@ import Home from './components/Home'
 import Lobby from './components/Lobby'
 import Game from './components/Game'
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001'
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || window.location.origin
 
 function App() {
   const [socket, setSocket] = useState(null)
-  const [screen, setScreen] = useState('home') // home, lobby, game
+  const [screen, setScreen] = useState('home')
   const [roomCode, setRoomCode] = useState('')
   const [players, setPlayers] = useState([])
   const [gameState, setGameState] = useState(null)

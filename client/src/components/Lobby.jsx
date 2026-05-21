@@ -96,7 +96,7 @@ function Lobby({ roomCode, players, onToggleReady, onStartGame, error, socket })
                 : ''
             }`}
           >
-            {currentPlayer?.ready ? 'Ready!' : 'I'm Ready'}
+            {currentPlayer?.ready ? 'Ready!' : "I'm Ready"}
           </button>
         )}
 
